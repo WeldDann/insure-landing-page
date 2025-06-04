@@ -1,3 +1,32 @@
 .button {
-  /* ... */
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  border: 2px solid;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+.button--white {
+  border-color: white;
+  color: white;
+
+  &:hover,
+  &:focus-visible {
+    background-color: white;
+    color: var(--clr-blue-950);
+  }
+}
+
+.button--dark {
+  border-color: var(--clr-gray-950);
+  color: var(--clr-gray-950);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--clr-gray-950);
+    color: white;
+  }
 }
