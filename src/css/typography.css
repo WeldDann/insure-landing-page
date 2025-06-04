@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Karla;
+  src: url('/fonts/Karla-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+}
+
+body {
+  color: var(--clr-gray-700);
+  font-family: Karla;
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-gray-950);
+  font-family: 'DM Serif Display';
+  font-weight: 700;
+  line-height: var(--lh-heading);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}

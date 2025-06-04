@@ -1,0 +1,25 @@
+.container {
+  --padding-inline: 1.5rem;
+  --max-width: var(--breakpoint-xs);
+
+  width: calc(100% - var(--padding-inline) * 2);
+  max-width: var(--max-width);
+  margin-inline: auto;
+
+  @media (--breakpoint-sm) {
+    --max-width: var(--breakpoint-sm);
+    --padding-inline: 2rem;
+  }
+  @media (--breakpoint-md) {
+    --max-width: var(--breakpoint-md);
+    --padding-inline: 3rem;
+  }
+  @media (--breakpoint-lg) {
+    --max-width: var(--breakpoint-lg);
+    --padding-inline: 6rem;
+  }
+  @media (--breakpoint-xl) {
+    --max-width: var(--breakpoint-xl);
+    --padding-inline: 10.5rem;
+  }
+}
