@@ -25,7 +25,6 @@ h5,
 h6 {
   color: var(--clr-gray-950);
   font-family: 'DM Serif Display';
-  font-weight: 700;
   line-height: var(--lh-heading);
 }
 
