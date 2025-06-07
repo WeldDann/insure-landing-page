@@ -2,6 +2,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 section {
   margin-bottom: var(--section-spacing);
 }
