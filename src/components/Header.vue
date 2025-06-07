@@ -39,9 +39,11 @@ const menuIsExpanded = ref(false);
 
 <style scoped>
 header {
-  position: sticky;
+  width: 100%;
+  height: var(--header-height);
+  align-content: center;
+  position: fixed;
   top: 0;
-  padding-block: 1.5rem;
   background-color: white;
   letter-spacing: var(--ls-md);
   text-transform: uppercase;

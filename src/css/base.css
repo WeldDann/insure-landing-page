@@ -3,6 +3,7 @@ body {
 }
 
 main {
+  margin-top: var(--header-height);
   overflow-x: hidden;
 }
 
