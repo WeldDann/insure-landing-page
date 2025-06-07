@@ -1,7 +1,4 @@
 <script setup>
-import leftBgPatternUrl from '../assets/images/bg-pattern-intro-left-desktop.svg';
-import rightBgPatternMobileUrl from '../assets/images/bg-pattern-intro-right-mobile.svg';
-import rightBgPatternDekstopUrl from '../assets/images/bg-pattern-intro-right-desktop.svg';
 import heroImgUrl from '../assets/images/image-intro-desktop.jpg';
 </script>
 
@@ -24,16 +21,6 @@ import heroImgUrl from '../assets/images/image-intro-desktop.jpg';
         <img class="hero__desktop-img" :src="heroImgUrl" alt="Happy family holding hands." />
       </div>
     </div>
-
-    <img class="hero__bg-pattern hero__bg-pattern--left" :src="leftBgPatternUrl" alt="" />
-    <img
-      class="hero__bg-pattern hero__bg-pattern--right-mobile"
-      :src="rightBgPatternMobileUrl"
-      alt="" />
-    <img
-      class="hero__bg-pattern hero__bg-pattern--right-desktop"
-      :src="rightBgPatternDekstopUrl"
-      alt="" />
   </section>
 </template>
 
@@ -46,6 +33,39 @@ import heroImgUrl from '../assets/images/image-intro-desktop.jpg';
   & > * {
     position: relative;
     z-index: 20;
+  }
+
+  /* Left bg pattern */
+  &::before {
+    content: url('/images/bg-pattern-intro-left-desktop.svg');
+    position: absolute;
+    bottom: 25%;
+    z-index: 10;
+
+    @media (--breakpoint-lg) {
+      bottom: -330px;
+    }
+  }
+
+  /* Right bg pattern */
+  &::after {
+    content: url('/images/bg-pattern-intro-right-mobile.svg');
+    position: absolute;
+    right: 0;
+    bottom: -170px;
+    z-index: 10;
+
+    @media (--breakpoint-lg) {
+      content: url('/images/bg-pattern-intro-right-desktop.svg');
+      top: -85px;
+      right: -100px;
+      bottom: auto;
+      z-index: 30;
+    }
+
+    @media (--breakpoint-xl) {
+      right: -0;
+    }
   }
 
   @media (--breakpoint-lg) {
@@ -126,46 +146,6 @@ import heroImgUrl from '../assets/images/image-intro-desktop.jpg';
 
   @media (--breakpoint-lg) {
     display: block;
-  }
-}
-
-.hero__bg-pattern {
-  position: absolute;
-  z-index: 10;
-}
-
-.hero__bg-pattern--left {
-  bottom: 25%;
-
-  @media (--breakpoint-lg) {
-    top: 100%;
-    transform: translateY(-33%);
-  }
-}
-
-.hero__bg-pattern--right-desktop {
-  top: 0;
-  right: 0;
-  display: none;
-  transform: translate(30%, -15%);
-  z-index: 30;
-
-  @media (--breakpoint-lg) {
-    display: block;
-  }
-
-  @media (--breakpoint-xl) {
-    transform: translateY(-15%);
-  }
-}
-
-.hero__bg-pattern--right-mobile {
-  right: 0;
-  bottom: 0;
-  transform: translateY(50%);
-
-  @media (--breakpoint-lg) {
-    display: none;
   }
 }
 </style>
