@@ -1,7 +1,7 @@
 <template>
-  <section class="find-out" aria-labelledby="find-out__heading">
+  <section class="find-out" aria-labelledby="find-out-heading">
     <div class="find-out__container container">
-      <h2 class="find-out__heading">Find out more about how we work</h2>
+      <h2 class="find-out__heading" id="find-out-heading">Find out more about how we work</h2>
       <a class="find-out__btn button button--white" href="#">How we work</a>
     </div>
   </section>
@@ -34,6 +34,7 @@
 
 .find-out__heading {
   color: inherit;
+  text-wrap-style: balance;
   text-align: center;
 
   @media (--breakpoint-lg) {
