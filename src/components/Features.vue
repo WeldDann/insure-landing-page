@@ -12,22 +12,16 @@ import peopleIconUrl from '../assets/images/icons/icon-people-first.svg';
 
       <div class="features__features-container">
         <Feature heading="Snappy process" :icon-url="snappyIconUrl">
-          <template #desc>
-            Our application process can be completed in minutes, not hours. Don't get stuck filling
-            in tedious forms.
-          </template>
+          Our application process can be completed in minutes, not hours. Don't get stuck filling in
+          tedious forms.
         </Feature>
         <Feature heading="Afforable prices" :icon-url="pricesIconUrl">
-          <template #desc>
-            We don't want you worrying about high monthly costs. Our prices may be low, but we still
-            offer the best coverage possible.
-          </template>
+          We don't want you worrying about high monthly costs. Our prices may be low, but we still
+          offer the best coverage possible.
         </Feature>
         <Feature heading="People First" :icon-url="peopleIconUrl">
-          <template #desc>
-            Our plans aren't full of conditions and clauses to prevent payouts. We make sure you're
-            covered when you need it.
-          </template>
+          Our plans aren't full of conditions and clauses to prevent payouts. We make sure you're
+          covered when you need it.
         </Feature>
       </div>
     </div>

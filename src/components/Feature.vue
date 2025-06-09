@@ -10,7 +10,7 @@ defineProps({
     <img class="feature__icon" :src="iconUrl" alt="" />
     <h3 class="feature__heading">{{ heading }}</h3>
     <p>
-      <slot name="desc" />
+      <slot />
     </p>
   </div>
 </template>
