@@ -26,10 +26,13 @@
   background-size: 100% auto;
   background-position: bottom;
   color: white;
-  animation: menu-slide 200ms ease-out;
 
   @media (--breakpoint-lg) {
     display: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: menu-slide 200ms ease-out;
   }
 }
 
