@@ -21,7 +21,7 @@
   position: absolute;
   top: 100%;
   background-color: var(--clr-gray-950);
-  background-image: url('./images/bg-pattern-mobile-nav.svg');
+  background-image: url('/images/bg-pattern-mobile-nav.svg');
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: bottom;
